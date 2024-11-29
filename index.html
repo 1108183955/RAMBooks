@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DODGE RAM</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header class="cabeçalho">
+    <div class="container">
+      <input type="checkbox" id="menu" class="container__botao">
+      <label for="menu">
+        <span class="cabeçalho__menu-hamburguer container__imagem"></span>
+      </label>
+      <ul class="lista-menu">
+        <li class="lista-menu__titulo">Categorias</li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Motor</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Suspensão</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Off-road</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Acessórios</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Design & Conforto</a>
+        </li>
+      </ul>      
+      <img src="img/Logo.png" height="75" width="75" alt="Logo da Alurabooks" class="container__imagem">
+    </div>
+    <div class="container">
+      <a href="#"><img src="img/Favoritos.svg" alt="Meus favoritos" class="container__imagem"></a>
+      <a href="#"><img src="img/Compras.svg" alt="Carrinhos de compras" class="container__imagem"></a>
+      <a href="#"><img src="img/Usuario.svg" alt="Meu perfil" class="container__imagem"></a>
+    </div>
+  </header>
+
+  <section class="banner">
+    <h2 class="banner__titulo">Vamos começar?</h2>
+    <p class="banner__texto">Descubra qual caminhonete me dar de presente</p>
+    <input type="search" class="banner__pesquisa" placeholder="Modelos">
+  </section>
+
+  <section class="carrossel">
+    <h2 class="carrossel__titulo">Minhas favoritas</h2>
+    <!-- Slider main container -->
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide"><img src="img/DodgeRAM.png"
+          alt="Livro sobre apache kafka e spring boot da alura books"></div>
+      <div class="swiper-slide"><img src="img/silverado.png" alt="Livro sobre liderança em design da alura books">
+      </div>
+      <div class="swiper-slide"><img src="img/raptor.png" alt="Livro sobre javascript assertivo da alurabooks">
+      </div>
+      <div class="swiper-slide"><img src="img/RAM_1500-night-edition.png" alt="Livro Guia front end"></div>
+      <div class="swiper-slide"><img src="img/s10.png" alt="Livro sobre portugol"></div>
+      <div class="swiper-slide"><img src="img/hillux" alt="livro sobre acessibilidade"></div>
+    </div>
+
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+
+    </div>
+
+    <div class="card">
+      <div class="card__descrição">
+        <div class="descrição">
+          <h3 class="descrição__titulo">Talvez você também se interesse por...</h3>
+          <h2 class="descrição__titulo-livro">Angular 11 e Firebase</h2>
+          <p class="descrição__texto">
+            Construindo uma aplicação integrada com a plataforma do Google.
+          </p>
+        </div>
+        <img src="img/Angular.svg" class="descrição__imagem" />
+      </div>
+      <div class="card__botões">
+        <ul class="botões">
+          <li class="botões__item">
+            <img src="img/Favoritos.svg" alt="Favoritar livro" />
+          </li>
+          <li class="botões__item">
+            <img src="img/Compras.svg" alt="Adicionar no carrinho de compras" />
+          </li>
+        </ul>
+        <a href="#" class="botões__ancora">Saiba mais</a>
+      </div>
+    </div>
+
+  </section>
+
+  <section class=”carrossel”>
+    <h2 class="carrossel__titulo">As que eu me derreto...</h2>
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide"><img src="img/DodgeRAM.png"
+            alt="Livro sobre apache kafka e spring boot da alura books"></div>
+        <div class="swiper-slide"><img src="img/silverado.png" alt="Livro sobre liderança em design da alura books">
+        </div>
+        <div class="swiper-slide"><img src="img/RAM_1500-night-edition.png" alt="Livro sobre javascript assertivo da alurabooks">
+        </div>
+
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+
+    <div class="card">
+      <!-- 1º linha -->
+      <div class="card__descrição">
+        <!-- 1º coluna -->
+        <div class="descrição">
+          <img src="img/Estrelinhas.svg" alt="Avaliação 5 estrelas">
+          <h3 class="descrição__titulo">Cara do Mês</h3>
+          <h2 class="descrição__titulo-livro">AgroBoy s2 S2</h2>
+          <p class="descrição__texto">Fazendeiro raiz, nato da roça e dono de diversas caminhonetes.
+          </p>
+        </div>
+        <!-- 2º coluna -->
+        <img src="img/agro.jpg" height="200" width="160" class="descrição__imagem">
+      </div>
+
+      <!-- 2º linha -->
+      <div class="card__botões">
+        <!-- 1º coluna -->
+        <ul class="botões">
+          <li class="botões__item"><img src="img/Favoritos.svg" alt="Favoritar livro"></li>
+          <li class="botões__item"><img src="img/Compras.svg" alt="Adicionar no carrinho de compras"></li>
+        </ul>
+        <!-- 2º coluna -->
+        <a href="#" class="botões__ancora">Saiba mais</a>
+      </div>
+    </div>
+
+
+
+  </section>
+
+  <section class="tópicos">
+    <h2 class="tópicos__titulo">TÓPICOS VISITADOS RECENTEMENTE</h2>
+    <ul class="tópicos__lista">
+      <li class="tópicos__item"><a href="#" class="tópicos__link">+AGROBOYS</a></li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Caminhonete</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Boys do Agro</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Agro</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Pilotos</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Max Verstappen</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">AgroBoys</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Dodge RAM 3500</a>
+      </li>
+    </ul>
+  </section>
+
+  <section class="contato">
+    <h2 class="contato__titulo">Fique por dentro das novidades!</h2>
+    <p class="contato__texto">
+      Atualizações das minhas favoritas.
+    </p>
+    <input type="email" placeholder="Cadastre seu e-mail" class="contato__email" />
+  </section>
+
+  <hr />
+
+  <footer class="rodapé">
+    <h2 class="rodapé__titulo">Grupo das loucas por agroboy</h2>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper(".swiper", {
+      spaceBetween: 10,
+      slidesPerView: 3,
+      pagination: {
+        el: ".swiper-pagination",
+        type: "bullets",
+      },
+    });
+  </script>
+</body>
+
+</html>
